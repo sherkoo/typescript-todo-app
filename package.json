@@ -1,0 +1,22 @@
+{
+  "name": "typescript-todo-app",
+  "version": "1.0.0",
+  "description": "This is a simple Todo app built with Webpack and TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack --watch",
+    "serve": "npx webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.0.0",
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.13.3"
+  }
+}
