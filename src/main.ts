@@ -1,10 +1,6 @@
-import Todo from "./Todo";
+import t from "./Todo2";
+t;
 
-let data:Array<string> = [];
-
-const t = new Todo(data);
-t.showAll();
-t.addNew("adding new");
-t.addNew("adding new2");
-t.addNew("adding new3");
-
+t.addTodo("adding new todo");
+t.addTodo("adding new todo2");
+t.addTodo("adding new todo3");
