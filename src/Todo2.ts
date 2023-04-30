@@ -26,6 +26,10 @@ class TodoApp {
     this.render();
   };
 
+  private markComplete = function(): void {
+    alert("marked complete");
+  }
+
   public render = (): void => {
     console.log(this.todos);
     const root = document.getElementById("root") as HTMLElement;
@@ -33,20 +37,19 @@ class TodoApp {
 
     this.todos.forEach((todo) => {
       const template = `
-          <div>
-            <h2>
-              <span><input type="checkbox"></span>
-              <span>${todo.text} - ${todo.id}</span>
-            </h2>
-          </div>
+        <div>
+          <h2>
+            <span><input type="checkbox" onclick="todoApp.markComplete('${todo.id}')"></span>
+            <span>${todo.text} - ${todo.id}</span>
+          </h2>
+        </div>
       `;
       root.innerHTML += template;
     });
   };
 }
 
-const t = new TodoApp();
+const todoApp = new TodoApp();
+todoApp.render();
 
-t.render(); // Call the `render` method directly without exporting it
-
-export default t;
+export default todoApp;
