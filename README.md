@@ -36,10 +36,9 @@ You can delete a Todo item by clicking on the "X" button next to the item.
 # Development
 To build the app for development, run the following command:
 
-arduino
-Copy code
+```bash
 npm run dev
-or
+```
 
 Copy code
 yarn dev
@@ -48,10 +47,9 @@ This will build the app and watch for changes to the source files, automatically
 # Production
 To build the app for production, run the following command:
 
-arduino
-Copy code
+```bash
 npm run build
-or
+```
 
 
 yarn build
